@@ -1,0 +1,12 @@
+<div class="wrapper">
+  <h1 class="text">Login Page</h1>
+
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <label>Email Address: </label>
+    <input formControlName="email" placeholder="someone@onecause.com">
+    <label>Password: </label>
+    <input formControlName="password" placeholder="password">
+  
+    <button type="submit">Login</button>
+  </form>
+</div>
